@@ -11,7 +11,7 @@ def after_request(response):
     return response
 
 
-pipe = pipeline("automatic-speech-recognition", model="ginpham614/wav2vec2-large-xlsr-53-vietnamese-finetuned-demo-colab")
+pipe = pipeline("automatic-speech-recognition", model="ginpham614/wav2vec2-large-xlsr-53-vietnamese-finetuned-demo-v2.0-colab")
 pipe_en = pipeline("automatic-speech-recognition", model="facebook/wav2vec2-base-960h")
 
 def convert_to_wav(input_path, output_path="processed_audio.wav"):
